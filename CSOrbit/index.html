@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBSE Computer Science Portal</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
+<header>
+<h1>CBSE Computer Science Learning Portal</h1>
+<p>Class 8 Computer Science Complete Notes</p>
+</header>
+
+<section class="modules">
+
+<a href="pages/networking.html" class="card">
+    <h2>1. Networking Fundamentals</h2>
+</a>
+
+<a href="pages/cyber.html" class="card">
+    <h2>2. Cyber Ethics & Safety</h2>
+</a>
+
+<a href="pages/blockchain.html" class="card">
+    <h2>3. Blockchain</h2>
+</a>
+
+<a href="pages/apps.html" class="card">
+    <h2>4. App Development</h2>
+</a>
+
+<a href="pages/database.html" class="card">
+    <h2>5. Database Management</h2>
+</a>
+
+<a href="pages/canva.html" class="card">
+    <h2>6. Video Editing in Canva</h2>
+</a>
+
+<a href="pages/python.html" class="card">
+    <h2>7. Python</h2>
+</a>
+
+<a href="pages/strings.html" class="card">
+    <h2>8. Strings</h2>
+</a>
+
+<a href="pages/lists.html" class="card">
+    <h2>9. Lists & Tuples</h2>
+</a>
+
+<a href="pages/html.html" class="card">
+    <h2>10. HTML & CSS</h2>
+</a>
+
+<a href="pages/forms.html" class="card">
+    <h2>11. Forms</h2>
+</a>
+
+<a href="pages/multimedia.html" class="card">
+    <h2>12. Multimedia</h2>
+</a>
+
+<a href="quiz/quiz.html" class="card quiz">
+    <h2>📝 Take Quiz</h2>
+</a>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script>
+gsap.from(".card",{
+    opacity:0,
+    y:100,
+    duration:1,
+    stagger:0.15
+});
+</script>
+</body>
+</html>

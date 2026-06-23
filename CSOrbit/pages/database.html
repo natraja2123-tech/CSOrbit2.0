@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Database Management System</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    color:white;
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a,
+        #7c3aed,
+        #06b6d4
+    );
+    background-size:400% 400%;
+    animation:bg 15s ease infinite;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.home-btn{
+    display:inline-block;
+    padding:12px 20px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:3rem;
+}
+
+.card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:25px;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.card p,
+.card li{
+    line-height:1.8;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table,th,td{
+    border:1px solid white;
+}
+
+th,td{
+    padding:10px;
+    text-align:center;
+}
+
+pre{
+    background:#0f172a;
+    padding:15px;
+    border-radius:10px;
+    overflow-x:auto;
+    margin-top:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html" class="home-btn">⬅ Back Home</a>
+
+<h1>Database Management System (DBMS)</h1>
+
+<div class="card">
+<h2>1. What is Data?</h2>
+
+<p>
+Data is a collection of facts, numbers, text, images or information
+that can be stored and processed by a computer.
+</p>
+
+<p>
+Examples: Student names, marks, phone numbers and addresses.
+</p>
+
+</div>
+
+<div class="card">
+<h2>2. What is a Database?</h2>
+
+<p>
+A database is an organized collection of related data stored
+electronically for easy access, management and updating.
+</p>
+
+</div>
+
+<div class="card">
+<h2>3. Need for Databases</h2>
+
+<ul>
+<li>Store large amounts of data</li>
+<li>Easy searching and retrieval</li>
+<li>Reduce duplication of data</li>
+<li>Improve security</li>
+<li>Manage information efficiently</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>4. What is DBMS?</h2>
+
+<p>
+DBMS (Database Management System) is software used to create,
+manage, update and retrieve data from databases.
+</p>
+
+<p>
+Examples: MySQL, Oracle, Microsoft SQL Server, PostgreSQL.
+</p>
+
+</div>
+
+<div class="card">
+<h2>5. Advantages of DBMS</h2>
+
+<ul>
+<li>Data Security</li>
+<li>Data Consistency</li>
+<li>Data Sharing</li>
+<li>Backup and Recovery</li>
+<li>Reduced Data Redundancy</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>6. Components of a Database</h2>
+
+<ul>
+<li>Tables</li>
+<li>Rows (Records)</li>
+<li>Columns (Fields)</li>
+<li>Primary Key</li>
+<li>Relationships</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>7. Table Example</h2>
+
+<table>
+
+<tr>
+<th>Student ID</th>
+<th>Name</th>
+<th>Class</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Shivam</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Rahul</td>
+<td>8</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Priya</td>
+<td>8</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+<h2>8. What is SQL?</h2>
+
+<p>
+SQL (Structured Query Language) is used to communicate with databases.
+It helps users create, read, update and delete data.
+</p>
+
+</div>
+
+<div class="card">
+<h2>9. SELECT Statement</h2>
+
+<pre>
+SELECT * FROM Students;
+</pre>
+
+<p>
+Displays all records from the Students table.
+</p>
+
+</div>
+
+<div class="card">
+<h2>10. INSERT Statement</h2>
+
+<pre>
+INSERT INTO Students
+VALUES(104,'Amit',8);
+</pre>
+
+<p>
+Adds a new record into the table.
+</p>
+
+</div>
+
+<div class="card">
+<h2>11. UPDATE Statement</h2>
+
+<pre>
+UPDATE Students
+SET Name='Rohan'
+WHERE StudentID=104;
+</pre>
+
+<p>
+Updates existing data in a table.
+</p>
+
+</div>
+
+<div class="card">
+<h2>12. DELETE Statement</h2>
+
+<pre>
+DELETE FROM Students
+WHERE StudentID=104;
+</pre>
+
+<p>
+Deletes a record from the database.
+</p>
+
+</div>
+
+<div class="card">
+<h2>13. Applications of Databases</h2>
+
+<ul>
+<li>Schools and Colleges</li>
+<li>Banks</li>
+<li>Hospitals</li>
+<li>Railway Reservation Systems</li>
+<li>E-Commerce Websites</li>
+<li>Social Media Platforms</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>14. Database Security</h2>
+
+<ul>
+<li>Use strong passwords</li>
+<li>Grant proper user permissions</li>
+<li>Regular backups</li>
+<li>Data encryption</li>
+<li>Firewall protection</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>15. Summary</h2>
+
+<p>
+A Database Management System (DBMS) helps organize, store,
+manage and retrieve data efficiently. SQL is used to interact
+with databases and perform operations such as inserting,
+updating, deleting and retrieving records.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strings in Python</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+color:white;
+background:linear-gradient(
+135deg,
+#0f172a,
+#1e3a8a,
+#7c3aed,
+#06b6d4
+);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.home-btn{
+display:inline-block;
+padding:12px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+font-size:3rem;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:20px;
+padding:25px;
+margin-bottom:20px;
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.card p,
+.card li{
+line-height:1.8;
+}
+
+pre{
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+overflow-x:auto;
+margin-top:10px;
+color:#22c55e;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+table,th,td{
+border:1px solid white;
+}
+
+th,td{
+padding:10px;
+text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html" class="home-btn">⬅ Back Home</a>
+
+<h1>Strings in Python</h1>
+
+<div class="card">
+<h2>1. Introduction to Strings</h2>
+
+<p>
+A string is a sequence of characters enclosed in single quotes (' ')
+or double quotes (" "). Strings are used to store text data.
+</p>
+
+<pre>
+name = "Python"
+print(name)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>2. Creating Strings</h2>
+
+<pre>
+str1 = "Hello"
+str2 = 'World'
+
+print(str1)
+print(str2)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>3. String Indexing</h2>
+
+<p>
+Each character in a string has a position called an index.
+Indexing starts from 0.
+</p>
+
+<pre>
+text = "Python"
+
+print(text[0])
+print(text[2])
+</pre>
+
+<p>
+Output:
+P
+t
+</p>
+
+</div>
+
+<div class="card">
+<h2>4. String Slicing</h2>
+
+<p>
+Slicing is used to extract a part of a string.
+</p>
+
+<pre>
+text = "Python"
+
+print(text[0:3])
+print(text[2:5])
+</pre>
+
+<p>
+Output:
+Pyt
+tho
+</p>
+
+</div>
+
+<div class="card">
+<h2>5. String Length</h2>
+
+<pre>
+text = "Python"
+
+print(len(text))
+</pre>
+
+<p>
+Output: 6
+</p>
+
+</div>
+
+<div class="card">
+<h2>6. String Concatenation</h2>
+
+<p>
+Concatenation means joining two strings.
+</p>
+
+<pre>
+first = "Hello"
+second = "World"
+
+print(first + " " + second)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>7. Repetition Operator</h2>
+
+<pre>
+text = "Hi "
+
+print(text * 3)
+</pre>
+
+<p>
+Output:
+Hi Hi Hi
+</p>
+
+</div>
+
+<div class="card">
+<h2>8. Common String Functions</h2>
+
+<table>
+
+<tr>
+<th>Function</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>upper()</td>
+<td>Convert to Uppercase</td>
+</tr>
+
+<tr>
+<td>lower()</td>
+<td>Convert to Lowercase</td>
+</tr>
+
+<tr>
+<td>title()</td>
+<td>Title Case</td>
+</tr>
+
+<tr>
+<td>replace()</td>
+<td>Replace Text</td>
+</tr>
+
+<tr>
+<td>find()</td>
+<td>Find Position</td>
+</tr>
+
+<tr>
+<td>count()</td>
+<td>Count Characters</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+<h2>9. upper() Function</h2>
+
+<pre>
+text = "python"
+
+print(text.upper())
+</pre>
+
+<p>
+Output:
+PYTHON
+</p>
+
+</div>
+
+<div class="card">
+<h2>10. lower() Function</h2>
+
+<pre>
+text = "PYTHON"
+
+print(text.lower())
+</pre>
+
+</div>
+
+<div class="card">
+<h2>11. replace() Function</h2>
+
+<pre>
+text = "I like Java"
+
+print(text.replace("Java","Python"))
+</pre>
+
+</div>
+
+<div class="card">
+<h2>12. find() Function</h2>
+
+<pre>
+text = "Python Programming"
+
+print(text.find("Programming"))
+</pre>
+
+</div>
+
+<div class="card">
+<h2>13. count() Function</h2>
+
+<pre>
+text = "banana"
+
+print(text.count("a"))
+</pre>
+
+<p>
+Output: 3
+</p>
+
+</div>
+
+<div class="card">
+<h2>14. Checking Membership</h2>
+
+<pre>
+text = "Python"
+
+print("P" in text)
+print("x" in text)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>15. Example Program: Reverse String</h2>
+
+<pre>
+text = "Python"
+
+print(text[::-1])
+</pre>
+
+<p>
+Output:
+nohtyP
+</p>
+
+</div>
+
+<div class="card">
+<h2>16. Example Program: Count Vowels</h2>
+
+<pre>
+text = "Education"
+
+count = 0
+
+for ch in text.lower():
+    if ch in "aeiou":
+        count += 1
+
+print("Vowels =", count)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>17. Example Program: Palindrome Check</h2>
+
+<pre>
+text = input("Enter Word: ")
+
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+</pre>
+
+</div>
+
+<div class="card">
+<h2>18. Applications of Strings</h2>
+
+<ul>
+<li>Text Processing</li>
+<li>Search Engines</li>
+<li>Chat Applications</li>
+<li>Data Analysis</li>
+<li>Web Development</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>19. Summary</h2>
+
+<p>
+Strings are one of the most important data types in Python.
+They are used to store and manipulate text using indexing,
+slicing and various built-in functions.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

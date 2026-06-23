@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CBSE Computer Science Quiz</title>
+
+<style>
+
+body{
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+h1{
+    text-align:center;
+}
+
+button{
+    padding:12px 20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+#result{
+    font-size:25px;
+    text-align:center;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>CBSE Computer Science Quiz</h1>
+
+<form id="quizForm">
+
+<div class="card">
+<p>1. What does LAN stand for?</p>
+<input type="radio" name="q1" value="1"> Local Area Network<br>
+<input type="radio" name="q1" value="0"> Long Area Network
+</div>
+
+<div class="card">
+<p>2. Which device connects networks?</p>
+<input type="radio" name="q2" value="1"> Router<br>
+<input type="radio" name="q2" value="0"> Monitor
+</div>
+
+<div class="card">
+<p>3. Cyber ethics means?</p>
+<input type="radio" name="q3" value="1"> Responsible use of technology<br>
+<input type="radio" name="q3" value="0"> Hacking websites
+</div>
+
+<div class="card">
+<p>4. Strong passwords improve?</p>
+<input type="radio" name="q4" value="1"> Security<br>
+<input type="radio" name="q4" value="0"> Screen brightness
+</div>
+
+<div class="card">
+<p>5. Blockchain stores data in?</p>
+<input type="radio" name="q5" value="1"> Blocks<br>
+<input type="radio" name="q5" value="0"> Folders
+</div>
+
+<div class="card">
+<p>6. Bitcoin is a?</p>
+<input type="radio" name="q6" value="1"> Cryptocurrency<br>
+<input type="radio" name="q6" value="0"> Browser
+</div>
+
+<div class="card">
+<p>7. Mobile applications are called?</p>
+<input type="radio" name="q7" value="1"> Apps<br>
+<input type="radio" name="q7" value="0"> Drivers
+</div>
+
+<div class="card">
+<p>8. First step of app development?</p>
+<input type="radio" name="q8" value="1"> Planning<br>
+<input type="radio" name="q8" value="0"> Deleting
+</div>
+
+<div class="card">
+<p>9. DBMS stands for?</p>
+<input type="radio" name="q9" value="1"> Database Management System<br>
+<input type="radio" name="q9" value="0"> Data Backup Memory System
+</div>
+
+<div class="card">
+<p>10. SQL is used for?</p>
+<input type="radio" name="q10" value="1"> Databases<br>
+<input type="radio" name="q10" value="0"> Video Editing
+</div>
+
+<div class="card">
+<p>11. Canva is mainly used for?</p>
+<input type="radio" name="q11" value="1"> Design & Video Editing<br>
+<input type="radio" name="q11" value="0"> Antivirus
+</div>
+
+<div class="card">
+<p>12. Which Canva tool removes unwanted video parts?</p>
+<input type="radio" name="q12" value="1"> Trim<br>
+<input type="radio" name="q12" value="0"> Paint
+</div>
+
+<div class="card">
+<p>13. Python is a?</p>
+<input type="radio" name="q13" value="1"> Programming Language<br>
+<input type="radio" name="q13" value="0"> Web Browser
+</div>
+
+<div class="card">
+<p>14. Output of print("Hello")?</p>
+<input type="radio" name="q14" value="1"> Hello<br>
+<input type="radio" name="q14" value="0"> Error
+</div>
+
+<div class="card">
+<p>15. Which function converts text to uppercase?</p>
+<input type="radio" name="q15" value="1"> upper()<br>
+<input type="radio" name="q15" value="0"> append()
+</div>
+
+<div class="card">
+<p>16. Lists are enclosed in?</p>
+<input type="radio" name="q16" value="1"> [ ]<br>
+<input type="radio" name="q16" value="0"> { }
+</div>
+
+<div class="card">
+<p>17. HTML stands for?</p>
+<input type="radio" name="q17" value="1"> HyperText Markup Language<br>
+<input type="radio" name="q17" value="0"> High Transfer Machine Language
+</div>
+
+<div class="card">
+<p>18. Which tag creates a hyperlink?</p>
+<input type="radio" name="q18" value="1"> &lt;a&gt;<br>
+<input type="radio" name="q18" value="0"> &lt;img&gt;
+</div>
+
+<div class="card">
+<p>19. Which tag creates a form?</p>
+<input type="radio" name="q19" value="1"> &lt;form&gt;<br>
+<input type="radio" name="q19" value="0"> &lt;table&gt;
+</div>
+
+<div class="card">
+<p>20. Which tag is used to insert video?</p>
+<input type="radio" name="q20" value="1"> &lt;video&gt;<br>
+<input type="radio" name="q20" value="0"> &lt;audio&gt;
+</div>
+
+<button type="button" onclick="checkQuiz()">
+Submit Quiz
+</button>
+
+</form>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+function checkQuiz(){
+
+let score = 0;
+
+for(let i=1;i<=20;i++){
+
+let answer =
+document.querySelector('input[name="q'+i+'"]:checked');
+
+if(answer){
+score += parseInt(answer.value);
+}
+
+}
+
+document.getElementById("result").innerHTML =
+"Your Score: " + score + " / 20";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fundamentals of Python</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+color:white;
+background:linear-gradient(
+135deg,
+#0f172a,
+#1e3a8a,
+#7c3aed,
+#06b6d4
+);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+.home-btn{
+display:inline-block;
+padding:12px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+h1{
+text-align:center;
+margin-bottom:30px;
+font-size:3rem;
+}
+
+.card{
+background:rgba(255,255,255,0.12);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,0.2);
+border-radius:20px;
+padding:25px;
+margin-bottom:20px;
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.card p,
+.card li{
+line-height:1.8;
+}
+
+pre{
+background:#0f172a;
+padding:15px;
+border-radius:10px;
+overflow-x:auto;
+margin-top:10px;
+color:#22c55e;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="../index.html" class="home-btn">⬅ Back Home</a>
+
+<h1>Fundamentals of Python</h1>
+
+<div class="card">
+<h2>1. Introduction to Python</h2>
+
+<p>
+Python is a high-level, interpreted and easy-to-learn programming language.
+It was developed by Guido van Rossum and released in 1991.
+</p>
+
+</div>
+
+<div class="card">
+<h2>2. Features of Python</h2>
+
+<ul>
+<li>Easy to Learn</li>
+<li>Simple Syntax</li>
+<li>Object-Oriented</li>
+<li>Cross Platform</li>
+<li>Open Source</li>
+<li>Large Library Support</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>3. First Python Program</h2>
+
+<pre>
+print("Hello World")
+</pre>
+
+<p>
+Output:
+Hello World
+</p>
+
+</div>
+
+<div class="card">
+<h2>4. Variables</h2>
+
+<p>
+Variables are used to store data values.
+</p>
+
+<pre>
+name = "Shivam"
+age = 16
+
+print(name)
+print(age)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>5. Data Types</h2>
+
+<ul>
+<li>int → Integer</li>
+<li>float → Decimal Number</li>
+<li>str → String</li>
+<li>bool → True/False</li>
+<li>list → Collection of Values</li>
+</ul>
+
+<pre>
+x = 10
+y = 3.14
+name = "Python"
+</pre>
+
+</div>
+
+<div class="card">
+<h2>6. Input from User</h2>
+
+<pre>
+name = input("Enter Name: ")
+
+print("Hello", name)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>7. Operators</h2>
+
+<ul>
+<li>+ Addition</li>
+<li>- Subtraction</li>
+<li>* Multiplication</li>
+<li>/ Division</li>
+<li>% Modulus</li>
+</ul>
+
+<pre>
+a = 10
+b = 5
+
+print(a+b)
+print(a-b)
+print(a*b)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>8. Conditional Statements</h2>
+
+<p>
+Used to make decisions in programs.
+</p>
+
+<pre>
+age = 18
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+</pre>
+
+</div>
+
+<div class="card">
+<h2>9. For Loop</h2>
+
+<pre>
+for i in range(1,6):
+    print(i)
+</pre>
+
+<p>
+Output:
+1 2 3 4 5
+</p>
+
+</div>
+
+<div class="card">
+<h2>10. While Loop</h2>
+
+<pre>
+i = 1
+
+while i <= 5:
+    print(i)
+    i += 1
+</pre>
+
+</div>
+
+<div class="card">
+<h2>11. Functions</h2>
+
+<p>
+Functions help reuse code.
+</p>
+
+<pre>
+def greet():
+    print("Welcome")
+
+greet()
+</pre>
+
+</div>
+
+<div class="card">
+<h2>12. Lists</h2>
+
+<pre>
+fruits = ["Apple","Banana","Mango"]
+
+print(fruits[0])
+</pre>
+
+</div>
+
+<div class="card">
+<h2>13. Strings</h2>
+
+<pre>
+text = "Python"
+
+print(text.upper())
+print(text.lower())
+</pre>
+
+</div>
+
+<div class="card">
+<h2>14. Example Program: Addition</h2>
+
+<pre>
+a = int(input("Enter First Number: "))
+b = int(input("Enter Second Number: "))
+
+sum = a + b
+
+print("Sum =", sum)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>15. Example Program: Even or Odd</h2>
+
+<pre>
+num = int(input("Enter Number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+</pre>
+
+</div>
+
+<div class="card">
+<h2>16. Example Program: Multiplication Table</h2>
+
+<pre>
+num = 5
+
+for i in range(1,11):
+    print(num * i)
+</pre>
+
+</div>
+
+<div class="card">
+<h2>17. Applications of Python</h2>
+
+<ul>
+<li>Web Development</li>
+<li>Artificial Intelligence</li>
+<li>Machine Learning</li>
+<li>Data Science</li>
+<li>Game Development</li>
+<li>Automation</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>18. Summary</h2>
+
+<p>
+Python is one of the most popular programming languages because of
+its simple syntax and powerful features. It is used in web development,
+AI, data science, automation and many other fields.
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
